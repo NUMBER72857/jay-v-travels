@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -65,6 +66,11 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				}
+			},
+			boxShadow: {
+				'soft': '0 4px 20px -4px hsl(210 20% 20% / 0.1)',
+				'primary': '0 10px 30px -10px hsl(210 100% 50% / 0.3)',
+				'secondary': '0 10px 30px -10px hsl(25 95% 60% / 0.3)'
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
