@@ -1,3 +1,4 @@
+
 import { Link } from 'react-router-dom';
 import { 
   Plane, 
@@ -9,7 +10,9 @@ import {
   Twitter,
   Shield,
   Award,
-  Users
+  Users,
+  Youtube,
+  Linkedin
 } from 'lucide-react';
 
 const Footer = () => {
@@ -103,27 +106,66 @@ const Footer = () => {
             {/* Social Media */}
             <div className="pt-4">
               <h5 className="font-medium mb-3">Follow Us</h5>
-              <div className="flex space-x-3">
+              <div className="grid grid-cols-2 gap-2">
                 <a 
-                  href="#" 
-                  className="p-2 bg-white/10 rounded-full hover:bg-white/20 transition-colors"
+                  href="https://facebook.com/jayvtravel" 
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center space-x-2 p-2 bg-white/10 rounded-lg hover:bg-white/20 transition-colors text-sm"
                   aria-label="Facebook"
                 >
-                  <Facebook className="h-5 w-5" />
+                  <Facebook className="h-4 w-4" />
+                  <span>Facebook</span>
                 </a>
                 <a 
-                  href="#" 
-                  className="p-2 bg-white/10 rounded-full hover:bg-white/20 transition-colors"
+                  href="https://instagram.com/jayvtravel" 
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center space-x-2 p-2 bg-white/10 rounded-lg hover:bg-white/20 transition-colors text-sm"
                   aria-label="Instagram"
                 >
-                  <Instagram className="h-5 w-5" />
+                  <Instagram className="h-4 w-4" />
+                  <span>Instagram</span>
                 </a>
                 <a 
-                  href="#" 
-                  className="p-2 bg-white/10 rounded-full hover:bg-white/20 transition-colors"
+                  href="https://youtube.com/@jayvtravel" 
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center space-x-2 p-2 bg-white/10 rounded-lg hover:bg-white/20 transition-colors text-sm"
+                  aria-label="YouTube"
+                >
+                  <Youtube className="h-4 w-4" />
+                  <span>YouTube</span>
+                </a>
+                <a 
+                  href="https://linkedin.com/company/jayvtravel" 
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center space-x-2 p-2 bg-white/10 rounded-lg hover:bg-white/20 transition-colors text-sm"
+                  aria-label="LinkedIn"
+                >
+                  <Linkedin className="h-4 w-4" />
+                  <span>LinkedIn</span>
+                </a>
+                <a 
+                  href="https://twitter.com/jayvtravel" 
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center space-x-2 p-2 bg-white/10 rounded-lg hover:bg-white/20 transition-colors text-sm"
                   aria-label="Twitter"
                 >
-                  <Twitter className="h-5 w-5" />
+                  <Twitter className="h-4 w-4" />
+                  <span>Twitter</span>
+                </a>
+                <a 
+                  href="https://tiktok.com/@jayvtravel" 
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center space-x-2 p-2 bg-white/10 rounded-lg hover:bg-white/20 transition-colors text-sm"
+                  aria-label="TikTok"
+                >
+                  <div className="h-4 w-4 text-white font-bold text-xs flex items-center justify-center border border-current rounded">T</div>
+                  <span>TikTok</span>
                 </a>
               </div>
             </div>

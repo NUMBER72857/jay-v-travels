@@ -14,6 +14,7 @@ import {
   MessageCircle
 } from 'lucide-react';
 import Hero from '@/components/Hero';
+import SocialMediaSection from '@/components/SocialMediaSection';
 import destinationsImage from '@/assets/destinations-collage.jpg';
 import planningImage from '@/assets/planning-consultation.jpg';
 
@@ -289,6 +290,9 @@ const Home = () => {
           </div>
         </div>
       </section>
+
+      {/* Social Media Section */}
+      <SocialMediaSection />
 
       {/* CTA Section */}
       <section className="py-20 bg-gradient-to-r from-primary to-secondary text-white">
