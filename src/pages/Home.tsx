@@ -45,14 +45,14 @@ const Home = () => {
       description: "Explore London, Paris, and Rome with guided educational tours",
       image: "🏛️",
       price: "From $2,499",
-      duration: "10 days"
+      duration: "1-3 years"
     },
     {
       title: "Science & Nature",
       description: "National parks, museums, and interactive science centers",
       image: "🔬",
       price: "From $1,299",
-      duration: "5 days"
+      duration: "1-4 years"
     },
     {
       title: "Cultural Exchange",
@@ -69,21 +69,24 @@ const Home = () => {
       role: "High School Principal",
       content: "Jay V Travel's made our European trip seamless. The students had an incredible educational experience, and we felt completely safe throughout.",
       rating: 5,
-      school: "Lincoln High School"
+      school: "Lincoln High School",
+      image: "https://randomuser.me/api/portraits/women/44.jpg"
     },
     {
       name: "Michael Chen",
       role: "Student",
       content: "The best trip ever! I learned so much about history and made friends from different schools. Can't wait for the next adventure!",
       rating: 5,
-      school: "Roosevelt Academy"
+      school: "Roosevelt Academy",
+      image: "https://randomuser.me/api/portraits/men/32.jpg"
     },
     {
       name: "Emily Rodriguez",
       role: "Parent",
       content: "As a parent, I was initially worried, but Jay V's safety measures and communication gave me complete peace of mind. My daughter had the time of her life!",
       rating: 5,
-      school: "Parent of Madison High Student"
+      school: "Parent of Madison High Student",
+      image: ""
     }
   ];
 
