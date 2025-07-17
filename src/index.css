@@ -17,26 +17,45 @@ All colors MUST be HSL.
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Travel Agency Brand Colors */
+    --primary: 210 100% 50%; /* Vibrant sky blue */
+    --primary-foreground: 0 0% 100%;
+    --primary-light: 210 100% 70%;
+    --primary-dark: 210 100% 35%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 25 95% 60%; /* Adventure orange */
+    --secondary-foreground: 0 0% 100%;
+    --secondary-light: 25 95% 75%;
 
-    --muted: 210 40% 96.1%;
+    --accent: 150 60% 50%; /* Success green */
+    --accent-foreground: 0 0% 100%;
+
+    --muted: 210 20% 96%;
     --muted-foreground: 215.4 16.3% 46.9%;
-
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
     --border: 214.3 31.8% 91.4%;
     --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --ring: 210 100% 50%;
 
-    --radius: 0.5rem;
+    --radius: 0.75rem;
+
+    /* Travel-specific gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(210 100% 50%), hsl(25 95% 60%));
+    --gradient-card: linear-gradient(145deg, hsl(210 100% 98%), hsl(210 50% 95%));
+    --gradient-button: linear-gradient(135deg, hsl(210 100% 50%), hsl(210 100% 35%));
+    --gradient-secondary: linear-gradient(135deg, hsl(25 95% 60%), hsl(25 95% 45%));
+
+    /* Shadows with brand colors */
+    --shadow-primary: 0 10px 30px -10px hsl(210 100% 50% / 0.3);
+    --shadow-secondary: 0 10px 30px -10px hsl(25 95% 60% / 0.3);
+    --shadow-soft: 0 4px 20px -4px hsl(210 20% 20% / 0.1);
+
+    /* Animations */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 
     --sidebar-background: 0 0% 98%;
 
@@ -100,6 +119,84 @@ All colors MUST be HSL.
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-sans;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer components {
+  /* Hero Button Variants */
+  .btn-hero {
+    @apply bg-gradient-to-r from-primary to-primary-dark text-primary-foreground font-semibold px-8 py-4 rounded-full shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300;
+  }
+
+  .btn-secondary {
+    @apply bg-gradient-to-r from-secondary to-secondary-light text-secondary-foreground font-semibold px-8 py-4 rounded-full shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300;
+  }
+
+  .btn-outline {
+    @apply border-2 border-primary text-primary font-semibold px-8 py-4 rounded-full hover:bg-primary hover:text-primary-foreground transform hover:scale-105 transition-all duration-300;
+  }
+
+  /* Card Styles */
+  .card-travel {
+    @apply bg-card rounded-2xl shadow-soft hover:shadow-primary transition-all duration-300 transform hover:-translate-y-2;
+  }
+
+  .card-destination {
+    @apply bg-gradient-to-br from-card to-muted rounded-2xl overflow-hidden shadow-soft hover:shadow-primary transition-all duration-500 transform hover:-translate-y-3 hover:scale-105;
+  }
+
+  /* Animation Classes */
+  .fade-in {
+    @apply opacity-0 translate-y-8 transition-all duration-700 ease-out;
+  }
+
+  .fade-in.visible {
+    @apply opacity-100 translate-y-0;
+  }
+
+  .slide-in-left {
+    @apply opacity-0 -translate-x-12 transition-all duration-700 ease-out;
+  }
+
+  .slide-in-left.visible {
+    @apply opacity-100 translate-x-0;
+  }
+
+  .slide-in-right {
+    @apply opacity-0 translate-x-12 transition-all duration-700 ease-out;
+  }
+
+  .slide-in-right.visible {
+    @apply opacity-100 translate-x-0;
+  }
+
+  .hero-parallax {
+    @apply bg-gradient-to-br from-primary via-primary-light to-secondary min-h-screen flex items-center justify-center relative overflow-hidden;
+  }
+
+  /* Floating Animation */
+  .float {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  @keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-20px); }
+    100% { transform: translateY(0px); }
+  }
+
+  /* Pulse Glow Effect */
+  .pulse-glow {
+    animation: pulse-glow 2s infinite;
+  }
+
+  @keyframes pulse-glow {
+    0%, 100% { box-shadow: 0 0 20px hsl(210 100% 50% / 0.4); }
+    50% { box-shadow: 0 0 40px hsl(210 100% 50% / 0.8); }
   }
 }
