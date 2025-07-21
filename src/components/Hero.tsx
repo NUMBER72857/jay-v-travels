@@ -71,7 +71,7 @@ const Hero = () => {
             </div>
             <div className="flex flex-col items-center space-y-2 bg-white/10 backdrop-blur-sm rounded-2xl p-6">
               <Award className="h-8 w-8 text-secondary" />
-              <div className="text-2xl font-bold">15+</div>
+              <div className="text-2xl font-bold">1+</div>
               <div className="text-sm opacity-90">Years Experience</div>
             </div>
           </div>

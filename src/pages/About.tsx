@@ -64,7 +64,7 @@ const About = () => {
             </h1>
             <p className="text-xl md:text-2xl text-muted-foreground leading-relaxed">
               Transforming education through safe, meaningful, and memorable travel experiences 
-              for over 15 years.
+              for over 1 year.
             </p>
           </div>
         </div>
@@ -90,7 +90,7 @@ const About = () => {
                 and inspire students to become global citizens.
               </p>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                Since 2009, we've been dedicated to making educational travel accessible, safe, and 
+                Since 2024, we've been dedicated to making educational travel accessible, safe, and 
                 meaningful for schools across the country. Every journey we craft is designed to 
                 complement classroom learning while creating memories that last a lifetime.
               </p>
@@ -188,10 +188,10 @@ const About = () => {
               <div className="w-32 h-32 bg-primary rounded-full mx-auto mb-6 flex items-center justify-center text-6xl text-white font-bold">
                 JV
               </div>
-              <h3 className="text-2xl font-bold mb-2">Jay Valenzuela</h3>
+              <h3 className="text-2xl font-bold mb-2">Onianwa Jessica</h3>
               <p className="text-primary font-semibold mb-4">Founder & CEO</p>
               <p className="text-muted-foreground leading-relaxed">
-                With over 15 years in educational travel and a background in education, 
+                With over 1 year in educational travel and a background in education, 
                 Jay founded Jay V Travel's with the vision of making transformative travel 
                 experiences accessible to all students. His passion for education and travel 
                 drives our commitment to excellence and safety.

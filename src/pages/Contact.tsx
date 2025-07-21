@@ -52,19 +52,19 @@ const Contact = () => {
     {
       icon: Phone,
       title: "Phone",
-      details: ["+1 (555) 123-4567", "Mon-Fri 8AM-6PM EST"],
-      action: "tel:+15551234567"
+      details: ["+234 (814) 281-4220", "Mon-Fri 8AM-6PM EST"],
+      action: "tel:+2348142814220"
     },
     {
       icon: Mail,
       title: "Email",
-      details: ["info@jayvtravel.com", "quotes@jayvtravel.com"],
+      details: ["info@jayvtravel.com",],
       action: "mailto:info@jayvtravel.com"
     },
     {
       icon: MapPin,
       title: "Office",
-      details: ["123 Education Boulevard", "Learning City, LC 12345"],
+      details: ["19 Oil,Spring,Estate", "Lugbe, F.C.T Abuja"],
       action: "https://maps.google.com"
     },
     {
@@ -298,8 +298,8 @@ const Contact = () => {
                   <div className="text-center text-muted-foreground">
                     <MapPin className="h-12 w-12 mx-auto mb-2" />
                     <p>Interactive Map</p>
-                    <p className="text-sm">123 Education Boulevard</p>
-                    <p className="text-sm">Learning City, LC 12345</p>
+                    <p className="text-sm">19 Oil,Spring,Estate</p>
+                    <p className="text-sm">Lugbe, F.C.T Abuja</p>
                   </div>
                 </div>
               </div>
@@ -311,14 +311,14 @@ const Contact = () => {
                 </p>
                 <div className="space-y-3">
                   <a 
-                    href="tel:+15551234567"
+                    href="tel:+2348142814220"
                     className="btn-secondary w-full justify-center"
                   >
                     <Phone className="mr-2 h-4 w-4" />
                     Call Us Now
                   </a>
                   <a 
-                    href="https://wa.me/15551234567"
+                    href="https://wa.me/+2348142814220"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="btn-outline w-full justify-center bg-green-500 border-green-500 text-white hover:bg-green-600"

@@ -1,13 +1,18 @@
 
 import { Facebook, Instagram, Youtube, Linkedin, Twitter, Camera, Heart, Share2 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import IgImg from '../assets/Ig.jpg';
+import FbImg from '../assets/Fb.jpg';
+import YtImg from '../assets/Yt.jpg';
+import { link } from 'fs';  
+
 
 const SocialMediaSection = () => {
   const socialPosts = [
     {
       platform: 'Instagram',
       icon: Instagram,
-      image: '/placeholder.svg',
+      image: IgImg,
       content: 'Amazing day exploring the Smithsonian with Lincoln High! 📚✈️ #EducationalTravel #StudentLife',
       likes: 234,
       comments: 18
@@ -15,7 +20,7 @@ const SocialMediaSection = () => {
     {
       platform: 'Facebook',
       icon: Facebook,
-      image: '/placeholder.svg',
+      image: FbImg,
       content: 'Thank you to Jefferson Middle School for choosing us for their Washington DC trip! Safe travels! 🇺🇸',
       likes: 156,
       comments: 23
@@ -23,7 +28,8 @@ const SocialMediaSection = () => {
     {
       platform: 'YouTube',
       icon: Youtube,
-      image: '/placeholder.svg',
+      image: YtImg,
+      // link: 
       content: 'New video: "5 Essential Tips for Student Travel Safety" - Watch now! 🎥',
       likes: 89,
       comments: 12
@@ -34,36 +40,36 @@ const SocialMediaSection = () => {
     {
       name: 'Facebook',
       icon: Facebook,
-      url: 'https://facebook.com/jayvtravel',
+      url: 'https://facebook.com',
       followers: '12.5K',
       color: 'bg-blue-600 hover:bg-blue-700'
     },
     {
       name: 'Instagram',
       icon: Instagram,
-      url: 'https://instagram.com/jayvtravel',
-      followers: '8.2K',
+      url: 'https://instagram.com',
+      followers: '1.2K',
       color: 'bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600'
     },
     {
       name: 'YouTube',
       icon: Youtube,
-      url: 'https://youtube.com/@jayvtravel',
-      followers: '5.1K',
+      url: 'https://youtube.com',
+      followers: '400',
       color: 'bg-red-600 hover:bg-red-700'
     },
     {
       name: 'LinkedIn',
       icon: Linkedin,
-      url: 'https://linkedin.com/company/jayvtravel',
-      followers: '3.8K',
+      url: 'https://linkedin.com',
+      followers: '90',
       color: 'bg-blue-700 hover:bg-blue-800'
     },
     {
       name: 'Twitter',
       icon: Twitter,
-      url: 'https://twitter.com/jayvtravel',
-      followers: '6.9K',
+      url: 'https://twitter.com',
+      followers: '1.2k',
       color: 'bg-sky-500 hover:bg-sky-600'
     }
   ];
