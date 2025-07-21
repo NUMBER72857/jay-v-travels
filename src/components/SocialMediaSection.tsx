@@ -1,9 +1,9 @@
 
 import { Facebook, Instagram, Youtube, Linkedin, Twitter, Camera, Heart, Share2 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import IgImg from '../assets/Ig.jpg';
-import FbImg from '../assets/Fb.jpg';
-import YtImg from '../assets/Yt.jpg';
+import igImg from '../assets/ig.jpg';
+import fbImg from '../assets/fb.jpg';
+import ytImg from '../assets/yt.jpg';
 import { link } from 'fs';  
 
 
@@ -12,7 +12,7 @@ const SocialMediaSection = () => {
     {
       platform: 'Instagram',
       icon: Instagram,
-      image: IgImg,
+      image: igImg,
       content: 'Amazing day exploring the Smithsonian with Lincoln High! 📚✈️ #EducationalTravel #StudentLife',
       likes: 234,
       comments: 18
@@ -20,7 +20,7 @@ const SocialMediaSection = () => {
     {
       platform: 'Facebook',
       icon: Facebook,
-      image: FbImg,
+      image: fbImg,
       content: 'Thank you to Jefferson Middle School for choosing us for their Washington DC trip! Safe travels! 🇺🇸',
       likes: 156,
       comments: 23
@@ -28,7 +28,7 @@ const SocialMediaSection = () => {
     {
       platform: 'YouTube',
       icon: Youtube,
-      image: YtImg,
+      image: ytImg,
       // link: 
       content: 'New video: "5 Essential Tips for Student Travel Safety" - Watch now! 🎥',
       likes: 89,
