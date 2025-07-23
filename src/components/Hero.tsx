@@ -43,35 +43,35 @@ const Hero = () => {
               Explore Destinations
               <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
             </Link>
-            <Link 
+            {/* <Link 
               to="/quote"
               className="btn-outline bg-white/10 backdrop-blur-sm text-white border-white hover:bg-white hover:text-primary"
             >
               Get Custom Quote
-            </Link>
-            <button className="flex items-center space-x-2 text-white hover:text-secondary transition-colors">
+            </Link> */}
+            {/* <button className="flex items-center space-x-2 text-white hover:text-secondary transition-colors">
               <div className="p-3 bg-white/20 rounded-full hover:bg-white/30 transition-colors">
                 <Play className="h-6 w-6" />
               </div>
               <span className="font-medium">Watch Our Story</span>
-            </button>
+            </button> */}
           </div>
 
           {/* Trust Indicators */}
           <div className={`grid grid-cols-1 md:grid-cols-3 gap-6 max-w-3xl mx-auto transition-all duration-1000 delay-500 ${isVisible ? 'fade-in visible' : 'fade-in'}`}>
             <div className="flex flex-col items-center space-y-2 bg-white/10 backdrop-blur-sm rounded-2xl p-6">
               <Users className="h-8 w-8 text-secondary" />
-              <div className="text-2xl font-bold">50,000+</div>
+              <div className="text-2xl font-bold">200+</div>
               <div className="text-sm opacity-90">Students Traveled</div>
             </div>
             <div className="flex flex-col items-center space-y-2 bg-white/10 backdrop-blur-sm rounded-2xl p-6">
               <Shield className="h-8 w-8 text-secondary" />
-              <div className="text-2xl font-bold">100%</div>
+              <div className="text-2xl font-bold">95%</div>
               <div className="text-sm opacity-90">Safety Record</div>
             </div>
             <div className="flex flex-col items-center space-y-2 bg-white/10 backdrop-blur-sm rounded-2xl p-6">
               <Award className="h-8 w-8 text-secondary" />
-              <div className="text-2xl font-bold">15+</div>
+              <div className="text-2xl font-bold">1+</div>
               <div className="text-sm opacity-90">Years Experience</div>
             </div>
           </div>

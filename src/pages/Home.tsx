@@ -45,14 +45,14 @@ const Home = () => {
       description: "Explore London, Paris, and Rome with guided educational tours",
       image: "🏛️",
       price: "From $2,499",
-      duration: "10 days"
+      duration: "1-3 years"
     },
     {
       title: "Science & Nature",
       description: "National parks, museums, and interactive science centers",
       image: "🔬",
       price: "From $1,299",
-      duration: "5 days"
+      duration: "1-4 years"
     },
     {
       title: "Cultural Exchange",
@@ -65,25 +65,28 @@ const Home = () => {
 
   const testimonials = [
     {
-      name: "Sarah Johnson",
+      name: "Number Daniel",
       role: "High School Principal",
       content: "Jay V Travel's made our European trip seamless. The students had an incredible educational experience, and we felt completely safe throughout.",
       rating: 5,
-      school: "Lincoln High School"
+      school: "Lincoln High School",
+      image: "https://randomuser.me/api/portraits/women/44.jpg"
     },
     {
-      name: "Michael Chen",
+      name: "Michael Albert",
       role: "Student",
       content: "The best trip ever! I learned so much about history and made friends from different schools. Can't wait for the next adventure!",
       rating: 5,
-      school: "Roosevelt Academy"
+      school: "Roosevelt Academy",
+      image: "https://randomuser.me/api/portraits/men/32.jpg"
     },
     {
       name: "Emily Rodriguez",
       role: "Parent",
       content: "As a parent, I was initially worried, but Jay V's safety measures and communication gave me complete peace of mind. My daughter had the time of her life!",
       rating: 5,
-      school: "Parent of Madison High Student"
+      school: "Parent of Madison High Student",
+      image: ""
     }
   ];
 
@@ -105,7 +108,7 @@ const Home = () => {
               Why Choose Jay V Travel's?
             </h2>
             <p className="text-xl text-muted-foreground mb-12 leading-relaxed">
-              For over 15 years, we've been creating transformative educational experiences 
+              For over 1 year, we've been creating transformative educational experiences 
               that inspire students, reassure parents, and exceed school expectations.
             </p>
             
@@ -128,7 +131,7 @@ const Home = () => {
                 <Trophy className="h-12 w-12 text-accent mx-auto mb-4" />
                 <h3 className="text-xl font-semibold mb-3">Proven Results</h3>
                 <p className="text-muted-foreground">
-                  99% customer satisfaction and countless student transformations
+                  95% customer satisfaction and countless student transformations
                 </p>
               </div>
             </div>

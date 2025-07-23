@@ -28,24 +28,7 @@ const Navbar = () => {
   return (
     <>
       {/* Top Contact Bar */}
-      <div className="bg-primary text-primary-foreground py-2 px-4 text-sm">
-        <div className="container mx-auto flex justify-between items-center">
-          <div className="flex items-center space-x-4">
-            <div className="flex items-center space-x-2">
-              <Phone className="h-4 w-4" />
-              <span>+1 (555) 123-4567</span>
-            </div>
-            <div className="flex items-center space-x-2">
-              <Mail className="h-4 w-4" />
-              <span>info@jayvtravel.com</span>
-            </div>
-          </div>
-          <div className="hidden md:block">
-            <span>✈️ Safe • Educational • Memorable School Trips</span>
-          </div>
-        </div>
-      </div>
-
+     
       {/* Main Navigation */}
       <nav
         className={`fixed w-full z-50 transition-all duration-300 ${

@@ -14,6 +14,7 @@ import {
   Youtube,
   Linkedin
 } from 'lucide-react';
+import path from 'path';
 
 const Footer = () => {
   return (
@@ -31,7 +32,7 @@ const Footer = () => {
             </div>
             <p className="text-sm opacity-90 leading-relaxed">
               Creating safe, educational, and memorable travel experiences for students 
-              for over 15 years. Your trusted partner in school travel.
+              for over 1 years. Your trusted partner in school travel.
             </p>
             <div className="flex space-x-4">
               <div className="flex items-center space-x-2">
@@ -50,8 +51,9 @@ const Footer = () => {
                 { name: 'Destinations', path: '/destinations' },
                 { name: 'Tour Packages', path: '/packages' },
                 { name: 'How It Works', path: '/how-it-works' },
-                { name: 'Safety Policies', path: '/safety' },
-                { name: 'FAQs', path: '/faqs' }
+                { name: 'Testimonials', path: '/testimonials'},
+                // { name: 'Safety Policies', path: '/safety' },
+                // { name: 'FAQs', path: '/faqs' }
               ].map((link) => (
                 <li key={link.path}>
                   <Link 
@@ -89,13 +91,13 @@ const Footer = () => {
               <div className="flex items-start space-x-3">
                 <MapPin className="h-5 w-5 mt-0.5 flex-shrink-0" />
                 <div className="text-sm opacity-90">
-                  <p>123 Education Boulevard</p>
-                  <p>Learning City, LC 12345</p>
+                  <p>Oilspring,Estate</p>
+                  <p>Lugbe F.C.T Abuja</p>
                 </div>
               </div>
               <div className="flex items-center space-x-3">
                 <Phone className="h-5 w-5 flex-shrink-0" />
-                <span className="text-sm opacity-90">+1 (555) 123-4567</span>
+                <span className="text-sm opacity-90">+234 (814) 281-4220</span>
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="h-5 w-5 flex-shrink-0" />
@@ -177,7 +179,7 @@ const Footer = () => {
           <div className="flex flex-wrap justify-center items-center space-x-8 text-sm opacity-90">
             <div className="flex items-center space-x-2">
               <Users className="h-4 w-4" />
-              <span>15+ Years Experience</span>
+              <span>1+ Years Experience</span>
             </div>
             <div className="flex items-center space-x-2">
               <Shield className="h-4 w-4" />
@@ -185,7 +187,7 @@ const Footer = () => {
             </div>
             <div className="flex items-center space-x-2">
               <Award className="h-4 w-4" />
-              <span>99% Customer Satisfaction</span>
+              <span>95% Customer Satisfaction</span>
             </div>
           </div>
         </div>
