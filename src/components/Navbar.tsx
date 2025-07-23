@@ -44,8 +44,12 @@ const Navbar = () => {
               <div className="flex items-center space-x-2">
                 <Plane className="h-8 w-8 text-primary" />
                 <div>
-                  <h1 className="text-2xl font-bold text-primary">Jay V Travel's</h1>
-                  <p className="text-xs text-muted-foreground">Educational Adventures</p>
+                  <h1 className={`text-2xl font-bold transition-colors ${
+                    isScrolled ? 'text-primary' : 'text-white'
+                  }`}>Jay V Travel's</h1>
+                  <p className={`text-xs transition-colors ${
+                    isScrolled ? 'text-muted-foreground' : 'text-white/80'
+                  }`}>Educational Adventures</p>
                 </div>
               </div>
             </Link>
