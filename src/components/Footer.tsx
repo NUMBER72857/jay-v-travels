@@ -195,7 +195,7 @@ const Footer = () => {
         {/* Copyright */}
         <div className="border-t border-white/20 mt-8 pt-6 text-center">
           <p className="text-sm opacity-75">
-            © 2024 Jay V Travel's. All rights reserved. | 
+            © 2025 Jay V Travel's. All rights reserved. | 
             <Link to="/privacy" className="hover:underline ml-1">Privacy Policy</Link> | 
             <Link to="/terms" className="hover:underline ml-1">Terms of Service</Link>
           </p>

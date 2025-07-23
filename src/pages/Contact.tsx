@@ -334,7 +334,7 @@ const Contact = () => {
                 <p className="text-muted-foreground mb-2">
                   24/7 emergency support during trips:
                 </p>
-                <p className="font-semibold text-lg">+1 (555) 999-HELP</p>
+                <p className="font-semibold text-lg">+2348142814220-HELP</p>
                 <p className="text-sm text-muted-foreground">
                   (Available only during active travel periods)
                 </p>
